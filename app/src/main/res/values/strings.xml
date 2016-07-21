@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Home Budget</string>
+    <string name="account_sum">Stan Konta</string>
+    <string name="savings">Oszczędności</string>
+    <string name="account_matys">Konto Matys</string>
+    <string name="account_lu">Konto Lu</string>
+    <string name="wallet_matys">Portfel Matys</string>
+    <string name="wallet_lu">Portfel Lu</string>
+    <string name="envelope">Koperta</string>
+    <string name="add_position">Dodaj pozycję</string>
+    <string name="date">dd/mm/rr</string>
+    <string name="amount">Kwota</string>
+    <string name="what">Co?</string>
+    <string name="add">Dodaj</string>
+
+    <string-array name="position_type">
+        <item>Przychód</item>
+        <item>Wydatek</item>
+        <item>Przelew własny</item>
+    </string-array>
+
+    <string-array name="expense_category">
+        <item>Bieżące</item>
+        <item>Rozrywka</item>
+        <item>Dodatkowe</item>
+    </string-array>
+
+    <string-array name="income_category">
+        <item>Wypłata ABS</item>
+        <item>Wypłata State</item>
+        <item>Zlecenie Foto</item>
+        <item>Dodatkowe</item>
+    </string-array>
+
+    <string-array name="inner_wire">
+        <item>Wypłata ABS</item>
+        <item>Wypłata State</item>
+        <item>Zlecenie Foto</item>
+        <item>Dodatkowe</item>
+    </string-array>
+
+    <string-array name="account_category">
+        <item>Oszczędności</item>
+        <item>Konto Matys</item>
+        <item>Portfel Matys</item>
+        <item>Konto Lu</item>
+        <item>Portfel Lu</item>
+        <item>Koperta</item>
+    </string-array>
+
+</resources>

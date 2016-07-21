@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context="com.mateuszziomek.homebudget.MainActivity">
+
+    <LinearLayout
+        style="@style/TextView_style"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <TextView
+            style="@style/TextView_style"
+            android:text="@string/account_sum"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceLarge"/>
+        <TextView
+            style="@style/TextView_style"
+            tools:text="10 000 ZŁ" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/TextView_style"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp">
+        <TextView
+            style="@style/TextView_style"
+            android:text="@string/savings"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <TextView
+            style="@style/TextView_style"
+            tools:text="10 000 ZŁ" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/TextView_style"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp">
+        <TextView
+            style="@style/TextView_style"
+            android:text="@string/account_matys"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <TextView
+            style="@style/TextView_style"
+            tools:text="10 000 ZŁ" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/TextView_style"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp">
+        <TextView
+            style="@style/TextView_style"
+            android:text="@string/wallet_matys"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <TextView
+            style="@style/TextView_style"
+            tools:text="10 000 ZŁ" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/TextView_style"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp">
+        <TextView
+            style="@style/TextView_style"
+            android:text="@string/account_lu"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <TextView
+            style="@style/TextView_style"
+            tools:text="10 000 ZŁ" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/TextView_style"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp">
+        <TextView
+            style="@style/TextView_style"
+            android:text="@string/wallet_lu"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <TextView
+            style="@style/TextView_style"
+            tools:text="10 000 ZŁ" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/TextView_style"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp">
+        <TextView
+            style="@style/TextView_style"
+            android:text="@string/envelope"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <TextView
+            style="@style/TextView_style"
+            tools:text="10 000 ZŁ" />
+    </LinearLayout>
+
+    <Button
+        style="@style/TextView_style"
+        android:id="@+id/addButton"
+        android:layout_marginBottom="8dp"
+        android:text="@string/add_position"
+        android:background="#2979FF"
+        android:textAppearance="?android:textAppearanceLarge">
+    </Button>
+
+</LinearLayout>
