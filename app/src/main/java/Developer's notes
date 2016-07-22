@@ -1,0 +1,9 @@
+1. App crashes when adding item with empty fields.
+2. Need to add ScrollView to improve functioning layouts in horizontal mode.
+3. Logic for updating account balances. If stmt in Position.java to control the flow.
+4. Basically, income and expense methods are done. Need to work on internal wire and setting balances.
+5. Despite the incrementation of _id in Item's constructor, it does not work.
+6. Create a class that extends SqLiteOpenHelper and code the logic for db interaction.
+7. Loading the db should be done via service in the background, so that the user do not need to wait
+for the app.
+8. Accounts' balances need to be saved to file and loaded when the app starts. Might be a service.

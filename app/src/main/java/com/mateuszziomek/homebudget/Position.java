@@ -2,16 +2,21 @@ package com.mateuszziomek.homebudget;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 /**
  * Created by Mateusz Ziomek on 2016-07-20.
  */
 public class Position extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+
+    private static final String TAG = "MyActivity";
 
     // 2 methods of OnItemSelectedListener interface that need to be implemented
     @Override
@@ -27,10 +32,16 @@ public class Position extends AppCompatActivity implements AdapterView.OnItemSel
         super.onCreate(savedInstanceState);
         setContentView(R.layout.position);
 
-        // Find spinners' views
+        // Create an Account object to control values of the accounts
+        Account account = new Account();
+
+        // Find views
         final Spinner spinner1 = (Spinner) findViewById(R.id.spinner_1);
         final Spinner spinner2 = (Spinner) findViewById(R.id.spinner_2);
         final Spinner spinner3 = (Spinner) findViewById(R.id.spinner_3);
+        final EditText editText1 = (EditText) findViewById(R.id.date);
+        final EditText editText2 = (EditText) findViewById(R.id.what);
+        final EditText editText3 = (EditText) findViewById(R.id.amount);
 
         // Create an ArrayAdapter using the string array and a default spinner layout
         final ArrayAdapter<CharSequence> adapter_type = ArrayAdapter.createFromResource(this,
@@ -56,9 +67,6 @@ public class Position extends AppCompatActivity implements AdapterView.OnItemSel
             // income/expense/internal wire/set account balance - populate spinner2 accordingly
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                EditText editText1 = (EditText) findViewById(R.id.date);
-                EditText editText2 = (EditText) findViewById(R.id.what);
-
                 if (spinner1.getSelectedItem().equals("Wydatek")) {
                     spinner2.setAdapter(adapter_expense);
                     editText1.setVisibility(View.VISIBLE);
@@ -91,6 +99,28 @@ public class Position extends AppCompatActivity implements AdapterView.OnItemSel
         spinner2.setOnItemSelectedListener(this);
         spinner3.setAdapter(adapter_account);
         spinner3.setOnItemSelectedListener(this);
+
+        // Find view of the add button
+        final Button addButton = (Button) findViewById(R.id.addItemButton);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create a new Item object
+                Item item = new Item();
+
+                // Get all values input by the user
+                item.setPositionType(spinner1.getSelectedItem().toString());
+                item.setCategory(spinner2.getSelectedItem().toString());
+                item.setDate(editText1.getText().toString());
+                item.setWhat(editText2.getText().toString());
+                item.setAmount(Double.parseDouble(editText3.getText().toString()));
+                item.setAccount(spinner3.getSelectedItem().toString());
+
+
+                Toast.makeText(getApplicationContext(), "Pozycja dodana", Toast.LENGTH_SHORT).show();
+                Log.i(TAG, item.toString());
+            }
+        });
     }
 
 
