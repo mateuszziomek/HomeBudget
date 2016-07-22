@@ -14,9 +14,10 @@
     <string name="add">Dodaj</string>
 
     <string-array name="position_type">
-        <item>Przychód</item>
         <item>Wydatek</item>
+        <item>Przychód</item>
         <item>Przelew własny</item>
+        <item>Ustaw stan konta</item>
     </string-array>
 
     <string-array name="expense_category">
