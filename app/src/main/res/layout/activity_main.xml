@@ -3,109 +3,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_margin="8dp"
+    android:orientation="vertical"
     tools:context="com.mateuszziomek.homebudget.MainActivity">
 
     <LinearLayout
+        android:id="@+id/lay_total"
         style="@style/TextView_style"
-        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp">
+        android:orientation="vertical">
         <TextView
             style="@style/TextView_style"
             android:text="@string/account_sum"
             android:textAllCaps="true"
             android:textAppearance="?android:textAppearanceLarge"/>
         <TextView
+            android:id="@+id/total_balance"
             style="@style/TextView_style"
             tools:text="10 000 ZŁ" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lay_savings"
         style="@style/TextView_style"
-        android:orientation="vertical"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
         <TextView
             style="@style/TextView_style"
             android:text="@string/savings"
             android:textAppearance="?android:textAppearanceMedium"/>
         <TextView
+            android:id="@+id/savings_balance"
             style="@style/TextView_style"
             tools:text="10 000 ZŁ" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lay_account_matys"
         style="@style/TextView_style"
-        android:orientation="vertical"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
         <TextView
             style="@style/TextView_style"
             android:text="@string/account_matys"
             android:textAppearance="?android:textAppearanceMedium"/>
         <TextView
+            android:id="@+id/account_matys_balance"
             style="@style/TextView_style"
             tools:text="10 000 ZŁ" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lay_wallet_matys"
         style="@style/TextView_style"
-        android:orientation="vertical"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
         <TextView
             style="@style/TextView_style"
             android:text="@string/wallet_matys"
             android:textAppearance="?android:textAppearanceMedium"/>
         <TextView
+            android:id="@+id/wallet_matys_balance"
             style="@style/TextView_style"
             tools:text="10 000 ZŁ" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lay_account_lu"
         style="@style/TextView_style"
-        android:orientation="vertical"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
         <TextView
             style="@style/TextView_style"
             android:text="@string/account_lu"
             android:textAppearance="?android:textAppearanceMedium"/>
         <TextView
+            android:id="@+id/account_lu_balance"
             style="@style/TextView_style"
             tools:text="10 000 ZŁ" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lay_wallet_lu"
         style="@style/TextView_style"
-        android:orientation="vertical"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
         <TextView
             style="@style/TextView_style"
             android:text="@string/wallet_lu"
             android:textAppearance="?android:textAppearanceMedium"/>
         <TextView
+            android:id="@+id/wallet_lu_balance"
             style="@style/TextView_style"
             tools:text="10 000 ZŁ" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lay_envelope"
         style="@style/TextView_style"
-        android:orientation="vertical"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
         <TextView
             style="@style/TextView_style"
             android:text="@string/envelope"
             android:textAppearance="?android:textAppearanceMedium"/>
         <TextView
+            android:id="@+id/envelope_balance"
             style="@style/TextView_style"
             tools:text="10 000 ZŁ" />
     </LinearLayout>
 
     <Button
-        style="@style/TextView_style"
         android:id="@+id/addButton"
+        style="@style/TextView_style"
         android:layout_marginBottom="8dp"
-        android:text="@string/add_position"
         android:background="#2979FF"
+        android:text="@string/add_position"
         android:textAppearance="?android:textAppearanceLarge">
     </Button>
 
