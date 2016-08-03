@@ -32,8 +32,6 @@ public class Position extends AppCompatActivity implements AdapterView.OnItemSel
         super.onCreate(savedInstanceState);
         setContentView(R.layout.position);
 
-        // Create an Account object to control values of the accounts
-        Account account = new Account();
 
         // Find views
         final Spinner spinner1 = (Spinner) findViewById(R.id.spinner_1);
@@ -95,7 +93,7 @@ public class Position extends AppCompatActivity implements AdapterView.OnItemSel
             }
         });
 
-        // Set the rest spinners
+        // Set the rest of the spinners
         spinner2.setOnItemSelectedListener(this);
         spinner3.setAdapter(adapter_account);
         spinner3.setOnItemSelectedListener(this);
@@ -115,6 +113,9 @@ public class Position extends AppCompatActivity implements AdapterView.OnItemSel
                 item.setWhat(editText2.getText().toString());
                 item.setAmount(Double.parseDouble(editText3.getText().toString()));
                 item.setAccount(spinner3.getSelectedItem().toString());
+
+                // if statements that control the flow
+
 
 
                 Toast.makeText(getApplicationContext(), "Pozycja dodana", Toast.LENGTH_SHORT).show();
